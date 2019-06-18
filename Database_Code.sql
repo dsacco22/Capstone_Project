@@ -1,20 +1,31 @@
 ---- Create LOAN Table ----
 
 CREATE TABLE LOANS (
-Assigned_ID int PRIMARY KEY,
 Year int NOT NULL,
+Assigned_ID int PRIMARY KEY,
 Bank varchar NOT NULL,
 IncRat numeric NOT NULL,
 UPB numeric NOT NULL,
 LTV numeric NOT NULL,
 MortDate int NOT NULL,
 Purpose int NOT NULL,
+Coop int NOT NULL,
 Product int NOT NULL,
 FedGar int NOT NULL,
+Occup int NOT NULL,
 Front numeric NOT NULL,
 Back numeric NOT NULL,
 BoCreditScor numeric NOT NULL,
-CoBoCreditScor numeric NOT NULL
+PropType varchar NOT NULL,
+LTV_M numeric NOT NULL,
+Purpose_M numeric NOT NULL,
+Coop_M numeric NOT NULL,
+Product_M numeric NOT NULL,
+Occup_M numeric NOT NULL,
+Back_M numeric NOT NULL,
+BoCreditScor_M numeric NOT NULL,
+PropType_M numeric NOT NULL,
+Loan_Multiplier numeric NOT NULL
 );
 
 
