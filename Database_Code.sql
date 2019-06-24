@@ -1,6 +1,6 @@
 ---- Create LOAN Table ----
 
-CREATE TABLE LOANS (
+CREATE TABLE LOANS2 (
 Year int NOT NULL,
 Assigned_ID int PRIMARY KEY,
 Bank varchar NOT NULL,
@@ -30,6 +30,6 @@ Loan_Multiplier numeric NOT NULL
 
 
 ----- psql CLI Commands for Importing Data to Remote Database ----
-\copy loans from '2015_PUDB_EXPORT.csv' (format csv, header true, encoding 'UTF8');
-\copy loans from '2016_PUDB_EXPORT.csv' (format csv, header true, encoding 'UTF8');
-\copy loans from '2017_PUDB_EXPORT.csv' (format csv, header true, encoding 'UTF8');
+\copy LOANS2 from '2015_PUDB_EXPORT.csv' (format csv, header true, encoding 'UTF8');
+\copy LOANS2 from '2016_PUDB_EXPORT.csv' (format csv, header true, encoding 'UTF8');
+\copy LOANS2 from '2017_PUDB_EXPORT.csv' (format csv, header true, encoding 'UTF8');
